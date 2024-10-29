@@ -1,0 +1,47 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.logo_right {
+    color: #50C878;}
+.button {
+    color: white;
+    background-color: #50C878;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: none;}
+
+.direction_card {
+    background: rgb(130,177,179);
+    background: linear-gradient(90deg, rgba(130,177,179,1) 0%, rgb(92, 123, 123) 78%);
+    border-radius: 20px;
+    max-height: calc(580px*0.6);
+    max-width: calc(457px*0.6);
+    height: calc(23vw*1.27);
+    width: 23vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    overflow: hidden;}
+.direction_card h4 {
+    color: white;
+    display: flex;
+    margin-inline: 2rem;
+    margin-top: auto;
+    margin-bottom: 1vh;
+    text-align: left;}
+.direction_card p {
+    font-size: 0.7rem;
+    color: white;
+    margin-inline: 2rem;
+    display: flex;
+    justify-content: center;}
+.direction_card img {
+    object-fit: cover;
+    width: 100%}
+
+
+
+
+
+
+
