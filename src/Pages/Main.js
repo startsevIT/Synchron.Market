@@ -38,7 +38,7 @@ export default function LoginPage() {
         textAlign: "right"
       }}
       >
-        Lorem ipsum dolor sit amet consectetur. Vitae platea dui adipiscing quam amet. Nulla diam
+        Синхрон.Маркет – это инновационный онлайн-сервис в сфере рекламных услуг. Медиаресурс, который позволит рекламному агентству и бизнесу найти друг друга и выстроить взаимовыгодное сотрудничество без посредников.
       </div>
       <div 
         style={{
