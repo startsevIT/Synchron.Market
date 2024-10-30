@@ -54,7 +54,14 @@ export default function LoginPage() {
           Каталог услуг
         </h3>
         <div>
-          Lorem ipsum dolor sit amet consectetur. Netus mollis suspendisse risus tempor sagittis morbi. Massa et egestas urna purus at cras pretium risus. Leo justo sed venenatis vel egestas semper. Id vitae quis aliquam facilisis amet quis sed. Leo est diam mi eget quam adipiscing. Potenti nibh platea amet posuere pulvinar at nunc adipiscing. Risus augue in ultricies facilisi imperdiet. Condimentum blandit sagittis morbi cursus.
+        Бизнес очень часто сталкивается с вопросами размещения и изготовления рекламы, продвижения товаров и услуг, с вопросами маркетинга и продаж!
+        На рынке рекламных услуг представлены тысячи рекламных компаний. Чтобы выбрать одного исполнителя из множества, Вам потребуется потратить массу времени и финансов.
+        Сервис Синхрон.Маркет экономит Ваши финансы и время! Мы - ваш проводник в мир маркетинга и рекламы! 
+        Синхрон.Маркет подберет для Вас самые выгодные предложения на рынке. Все подрядчики на платформе – это собственники конструкций и обладатели ресурсов, которые позволят Вам не переплачивать посредникам и работать напрямую.
+
+        Позвоните или оставьте заявку, наш специалист свяжется с Вами и проконсультирует по интересующему вопросу!
+        С уважением к Вам и Вашему бизнесу, Cинхрон.Маркет!
+
         </div>
         <div style={{
           display: "grid",
