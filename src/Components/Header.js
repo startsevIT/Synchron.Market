@@ -47,8 +47,8 @@ export default function Header() {
           alignItems: "center"
         }}>
           <div>Главная</div>
-          <div>Отзывы</div>
           <div>Заявки</div>
+          <div>Отзывы</div>
           <div>Техподдержка</div>
         </menu>
         <div style={{
