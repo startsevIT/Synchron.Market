@@ -46,8 +46,12 @@ export default function Header() {
           fontSize: "1.5vw",
           alignItems: "center"
         }}>
-          <div>Главная</div>
-          <div>Заявки</div>
+          <Link to="/">
+            <div style={{color: "black"}}>Главная</div>
+          </Link>
+          <Link to="/orders">
+            <div style={{color: "black"}}>Заявки</div>
+          </Link>
           <div>Отзывы</div>
           <div>Техподдержка</div>
         </menu>

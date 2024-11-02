@@ -11,6 +11,8 @@
     border-radius: 5px;
     border: none;}
 
+
+
 .direction_card {
     background: rgb(130,177,179);
     background: linear-gradient(90deg, rgba(130,177,179,1) 0%, rgb(92, 123, 123) 78%);
@@ -41,7 +43,73 @@
 
 
 
+.order_card {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1rem 1rem auto 2rem 3rem;
+    border-radius: 27px;
+    opacity: 70%;
+    border: 0.5px solid #2C3950B2;
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+    font-family: Helvetica;
+    font-weight: 400;
+    text-align: left;
+    color: #2C3950B2;}
+.order_card span {
+    font-size: medium;}   
+.order_card h3 {
+    color: #2C3950;
+    font-size: large;}  
+.order_card p {
+    font-size: small;}
+.order_card .direction_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    font-size: small;}
+.order_card .direction_info div {
+    padding: 0.2rem;
+    border-radius: 13px;
+    text-align: center;
+    color: white; 
+    margin-block: auto;}
+.order_card .direction{
+    background-color: #82B1B3;}
+.order_card .subspecies{
+    background-color: #50C878B2;}
 
 
+.order_card .infro_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;}
+.order_card .container_deadline {
+    display: grid;
+    grid-template-rows: 1rem 1rem;
+    gap: 0.5rem;
+    color: #2C3950;
+    border-radius: 13px;
+    place-items: center;
+    padding-block: 0.5rem;}
+.order_card .container_comments {
+    display: grid;
+    grid-template-rows: 1rem 1rem;
+    gap: 0.5rem;
+    color: #2C3950;
+    border-radius: 13px;
+    place-items: center;
+    padding-block: 0.5rem;}
+.order_card .header {
+    text-align: center;}
+.order_card .content {
+    text-align: center;}
 
-
+.orders {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70vw;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2vh;}

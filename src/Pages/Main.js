@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Img from "../mainImg.png"
 import { Card } from "../Components/Card";
 
-export default function LoginPage() {
+export default function Main() {
   const [directions, setDirections] = useState([]);
 
   useEffect(() =>

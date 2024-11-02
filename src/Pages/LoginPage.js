@@ -1,5 +1,4 @@
 import Form from "../Components/Form";
-import Header from "../Components/Header";
 import { LoginDTO } from "../DTOs/LoginDTO";
 
 export default function LoginPage() {
