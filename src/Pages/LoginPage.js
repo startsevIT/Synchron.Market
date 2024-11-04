@@ -3,14 +3,8 @@ import { LoginDTO } from "../DTOs/LoginDTO";
 
 export default function LoginPage() {
   return (
-    <div style={{
-      height: "100vh",
-      display: "grid",
-      gridTemplateRows: "1fr 8fr"
-    }}>
-      <div>
+    <div className="login_page">
       <Form title="Вход" data={LoginDTO} buttonText="Войти"/>       
-      </div>
     </div>
   );
 }

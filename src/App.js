@@ -1,7 +1,7 @@
 import LoginPage from "./Pages/LoginPage.js";
 import Main from "./Pages/Main.js";
 import {BrowserRouter, Route, Routes} from "react-router-dom"
-import Layout from "./Pages/Layout.js"
+import Layout from "./Layout.js"
 import Orders from "./Pages/Orders.js";
 import AccountPage from "./Pages/AccountPage.js";
 

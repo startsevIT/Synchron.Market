@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Card } from "../Components/Card";
+import Footer from "../Components/Footer";
 
 export default function Main() {
   const [directions, setDirections] = useState([]);
@@ -35,8 +36,6 @@ export default function Main() {
             <Card title={x.name} subspecies={x.subspecies}/>
           </div>)}   
         </div>
-      </div>
-      <div className="footer">
       </div>
       </div>   
   );

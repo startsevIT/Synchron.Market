@@ -9,7 +9,11 @@ export function Card({ title, subspecies }) {
           {subspecies.map(x => x.name + ", ")}
         </p>
       </div>
-      <img src="https://avatars.mds.yandex.net/i?id=4f7586d49edaa427e07a8819562fc284_l-5248434-images-thumbs&n=13" alt={title} />
+      <div 
+      className="img"
+      style={{ backgroundImage: "url(https://avatars.mds.yandex.net/i?id=4f7586d49edaa427e07a8819562fc284_l-5248434-images-thumbs&n=13)"}}
+      >
+      </div>
     </div>
   );
 }

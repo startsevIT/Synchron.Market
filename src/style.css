@@ -1,6 +1,6 @@
 * {
-    font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 7px);
-}
+    font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 7px);}
+
 
 .logo {
     display: flex;
@@ -8,7 +8,7 @@
     align-items: center;}
 .logo_right {
     color: #50C878;}
-.button {
+button {
     color: white;
     background-color: #50C878;
     padding: 0.5rem 2rem;
@@ -36,9 +36,8 @@
     margin-top: 1em;
     font-size: 0.9em;
     color: white;}
-.direction_card img {
-    object-fit: cover;
-    width: 100%}
+.direction_card .img {
+    background-size: 100% 100%;}
 
 
 
@@ -114,7 +113,6 @@
 
 
 
-
 .image_label{
     box-sizing: border-box;
     background: linear-gradient(135deg, #2C395099, #2C395099),
@@ -140,13 +138,64 @@
     padding-top: 5em;
     display: flex;
     overflow-x:scroll;
-    
     scroll-snap-type: x mandatory;}
 .directions_block .slide {
     scroll-snap-align: start;
-    min-width: 25vw;
+    min-width: 24.5vw;
     margin-inline: 1em;}
-.main .footer {
+
+
+
+footer {
     margin-top: 4em;
     height: 10em;
     background-color: #2C3950;}
+
+.login_page {
+    margin-inline: 25em;
+    margin-top: 5em;
+}
+
+
+
+form {
+    border: 0.5px  solid #2C395090;
+    padding: 4em;
+    border-radius: 25px;
+}
+
+.login_page form h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.login_page form .button {
+ 
+   display: flex;
+   justify-content: center;
+}
+
+.login_page form p {
+    margin-top: 1em;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    padding-block: 1em;
+    color: #2C3950B2;
+}
+
+.input input {
+    height: 2em;
+    border-radius: 5px;
+    border: 0.5px solid #2C39504D;
+}
+
+
