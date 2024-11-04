@@ -22,7 +22,8 @@
     background: linear-gradient(90deg, rgba(130,177,179,1) 0%, rgb(92, 123, 123) 78%);
     border-radius: 20px;
     display: grid;
-    grid-template-rows: 10em 10em;
+    height: 30em;
+    grid-template-rows: 1fr 1fr;
     padding-top: 1em;
     overflow: hidden;}
 .direction_card .text {
@@ -43,7 +44,7 @@
 
 .order_card {
     box-sizing: border-box;
-
+    
     display: grid;
     grid-template-rows: 1em 2em auto 2rem 3rem;
     border-radius: 27px;
