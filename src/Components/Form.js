@@ -1,13 +1,15 @@
+import { redirect } from "react-router-dom";
 import Button from "./Button.js";
 import Input from "./Input.js";
 
 export default function Form({title, data, buttonText}) {
  
     const CreateLoginDTO = async (e) => {
+        e.preventDefault();
         const formData = Object.fromEntries(new FormData(e.target))
 
         try {
-            const response = await fetch("https://localhost:7179/users/login",{
+            const response = await fetch("https://a30168-fd46.u.d-f.pw/users/login",{
                 method: "POST",
                 headers: { "Content-Type" : "application/json"},
                 body: JSON.stringify({...formData})
@@ -19,10 +21,12 @@ export default function Form({title, data, buttonText}) {
 
             const data = await response.json();
             sessionStorage.setItem("token", data)
+            
         }
         catch(error) {
             console.error(error);
         }
+        return redirect("/123");
     }
 
     const formContainerStyle = {

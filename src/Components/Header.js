@@ -61,10 +61,14 @@ export default function Header() {
           alignItems: "center",
           margin: "10px"
         }}> 
-        
+        {sessionStorage.getItem("token") ? 
+          <Link to="/account">
+            <Button text="Личный кабинет"/>
+          </Link>
+          : 
           <Link to="/login">
             <Button text="Войти"/>
-          </Link>
+          </Link>}
         </div>
        
       </div>
