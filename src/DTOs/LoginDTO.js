@@ -12,8 +12,3 @@ export const LoginDTO = [
         //minLength: 8
     }
 ]
-
-export const initialState = {
-    login: "",
-    password: ""
-}

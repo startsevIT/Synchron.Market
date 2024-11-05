@@ -1,16 +1,11 @@
 import { useEffect, useState } from "react";
 import { Card } from "../Components/Card";
-import Footer from "../Components/Footer";
+import { GetDirections } from "../Functions/ServiceFunctions";
 
 export default function Main() {
   const [directions, setDirections] = useState([]);
 
-  useEffect(() =>
-    { 
-      fetch("https://a30168-fd46.u.d-f.pw/directions")
-      .then(response => response.json())
-      .then(data => setDirections(data));
-    },[]);
+  useEffect(() => { GetDirections().then(data => setDirections(data)) } ,[]);
 
   return (
     <div className="main">
@@ -37,7 +32,7 @@ export default function Main() {
           </div>)}   
         </div>
       </div>
-      </div>   
+    </div>   
   );
 }
 
