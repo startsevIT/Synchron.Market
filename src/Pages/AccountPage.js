@@ -9,7 +9,7 @@ export default function AccountPage() {
   { 
     let bearer_token =  sessionStorage.getItem("token");
 
-    fetch("https://a30168-fd46.u.d-f.pw/users/account", {
+    fetch("https://a30411-cd22.u.d-f.pw/users/account", {
       method: "GET",
       headers: {
         'Authorization': 'Bearer ' + bearer_token,

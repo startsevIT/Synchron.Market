@@ -1,5 +1,5 @@
 export async function LoginUserAsync(formData) {
-    const response = await fetch("https://a30168-fd46.u.d-f.pw/users/login", {
+    const response = await fetch("https://a30411-cd22.u.d-f.pw/users/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...formData })
@@ -16,7 +16,7 @@ export async function LoginUserAsync(formData) {
 }
 
 export async function RegisterUserAsync(formData) {
-    const response = await fetch("https://a30168-fd46.u.d-f.pw/users/register", {
+    const response = await fetch("https://a30411-cd22.u.d-f.pw/users/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({        
