@@ -32,7 +32,6 @@ export async function RegisterUserAsync(formData) {
 }
 
 export async function LoginUserAsync(formData) {
-    RemoveToken();
     SetToken(
     await fetch(`${configData.SERVER_URL}/users/login`, {
         method: "POST",
@@ -43,30 +42,33 @@ export async function LoginUserAsync(formData) {
 }
 
 export async function SubscribeUserAsync(subscriptionId) {
+    let token = GetToken();
     RemoveToken();
     SetToken(
     await fetch(`${configData.SERVER_URL}/users/subscribe/${subscriptionId}`, {
       method: "POST",
-      headers: {'Authorization': GetToken()}
+      headers: {'Authorization': token}
     }).then(response => response.json()));
 }
 
 export async function UnSubscribeUserAsync(subscriptionId) {
+    let token = GetToken();
     RemoveToken();
     SetToken(
     await fetch(`${configData.SERVER_URL}/users/subscribe/${subscriptionId}`, {
       method: "POST",
-      headers: {'Authorization': GetToken()}
+      headers: {'Authorization': token}
     }).then(response => response.json()));
 }
 
 export async function PutUserAsync({companyName, inn = "", firstName = "", name = "", patronymic = "", email = "", phone = "", password = "", imgUrl = ""}) {
+    let token = GetToken();
     RemoveToken();
     SetToken(
     await fetch(`${configData.SERVER_URL}/users/update`, { 
         method: "PUT",
         headers: { 
-            'Authorization': GetToken(),
+            'Authorization': token,
             "Content-Type": "application/json"
         },
         body: JSON.stringify({ 
