@@ -54,7 +54,6 @@ export default function Header() {
           <Link to="/orders">
             <div style={{color: "black"}}>Заявки</div>
           </Link>
-          <div>Отзывы</div>
           <div>Техподдержка</div>
         </menu>
         <div style={{
