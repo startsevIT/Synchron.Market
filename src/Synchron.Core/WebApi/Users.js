@@ -1,5 +1,5 @@
 import configData from "../../config.json"
-import { GetToken, SetToken } from "../Token";
+import { GetToken, RemoveToken, SetToken } from "../Token";
 
 export async function GetAllUsersAsync() {
     return await fetch(`${configData.SERVER_URL}/users`, {
@@ -32,6 +32,7 @@ export async function RegisterUserAsync(formData) {
 }
 
 export async function LoginUserAsync(formData) {
+    RemoveToken();
     SetToken(
     await fetch(`${configData.SERVER_URL}/users/login`, {
         method: "POST",
@@ -42,6 +43,7 @@ export async function LoginUserAsync(formData) {
 }
 
 export async function SubscribeUserAsync(subscriptionId) {
+    RemoveToken();
     SetToken(
     await fetch(`${configData.SERVER_URL}/users/subscribe/${subscriptionId}`, {
       method: "POST",
@@ -50,6 +52,7 @@ export async function SubscribeUserAsync(subscriptionId) {
 }
 
 export async function UnSubscribeUserAsync(subscriptionId) {
+    RemoveToken();
     SetToken(
     await fetch(`${configData.SERVER_URL}/users/subscribe/${subscriptionId}`, {
       method: "POST",
@@ -58,6 +61,7 @@ export async function UnSubscribeUserAsync(subscriptionId) {
 }
 
 export async function PutUserAsync({companyName, inn = "", firstName = "", name = "", patronymic = "", email = "", phone = "", password = "", imgUrl = ""}) {
+    RemoveToken();
     SetToken(
     await fetch(`${configData.SERVER_URL}/users/update`, { 
         method: "PUT",
