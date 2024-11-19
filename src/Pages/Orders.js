@@ -1,28 +1,19 @@
-import { useEffect, useState } from "react";
-import OrderCard from "../Components/OrderCard";
+import { Link, Outlet } from "react-router-dom";
+import { GetToken } from "../Synchron.Core/Token";
+
 
 export default function LoginPage() {
-    const [orders, setOrders] = useState([]);
-
-    useEffect(() =>
-      { 
-        fetch("https://a30168-fd46.u.d-f.pw/orders")
-        .then(response => response.json())
-        .then(data => setOrders(data));
-      },[]);
+ 
   return (
-    <div className="orders">
-        {orders.map(x => 
-            <OrderCard 
-            id = {x.id.substring(0,8)}
-            title="Билборд на Малышева" 
-            description="Самое подробное описание заявки, которое только может быть, подробнее не может быть"
-            direction="Реклама"
-            subspecies="Билборды"
-            deadline="05.03.2025"
-            commentsCount="15"/>)}
-        
+    <div className="order_page">
+      <div className="operations">
+        <Link to={GetToken() === "Bearer null" ? "/login" : "/orders/create"}><p style={{color: "#2C3950"}}>Создание заявки +</p></Link>
+        <Link to="/orders"><p style={{color: "#50C878"}}>Список заявок =</p></Link>
+        <Link to="#"><p style={{color: "black"}}>Фильтр ?</p></Link>
+      </div>
+      <Outlet />
     </div>
   );
 }
+
 

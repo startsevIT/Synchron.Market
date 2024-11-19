@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Card } from "../Components/Card";
-import { GetDirections } from "../Functions/ServiceFunctions";
+import { GetAllDirectionsAsync } from "../Synchron.Core/WebApi/Directions";
 
 export default function Main() {
   const [directions, setDirections] = useState([]);
 
-  useEffect(() => { GetDirections().then(data => setDirections(data)) } ,[]);
+  useEffect(() => {GetAllDirectionsAsync().then(data => setDirections(data))},[]);
 
   return (
     <div className="main">
@@ -27,8 +27,11 @@ export default function Main() {
         </p>
         <div className="slider">
           {directions.map((x) => 
-          <div className="slide">
-            <Card title={x.name} subspecies={x.subspecies}/>
+          <div className="slide" key={x.id}>
+            <Card 
+            title={x.name} 
+            subspecies={x.subspecies} 
+            img={x.img}/>
           </div>)}   
         </div>
       </div>

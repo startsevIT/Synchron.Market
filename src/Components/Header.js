@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import { Logo } from "./Logo";
+import MiniAccount from "./MiniAccount";
 
 export default function Header() {
   return (
@@ -12,16 +13,17 @@ export default function Header() {
         backgroundColor: "#2C3950",
         color: "white",
         justifyContent: "right",
-        paddingRight: "10vw",
-        gap: "2vw"
+        paddingRight: "7.5em",
+        paddingBlock: "0.3em",
+        gap: "1em"
       }}>
-        <a href="">WhatsApp</a>
-        <a href="">TELEGRAM</a>
+        <a href=""><i className="fab fa-whatsapp" aria-hidden="true"></i></a>
+        <a href=""><i className="fab fa-telegram" aria-hidden="true"></i></a>
         <div>
-          phone number
+        (343)789-123
         </div>
         <div>
-          work time
+        пн-вс 8:00 – 21:00
         </div>
         <div>
           <div>
@@ -63,14 +65,13 @@ export default function Header() {
         }}> 
         {sessionStorage.getItem("token") ? 
           <Link to="/account">
-            <Button text="Личный кабинет"/>
+            <MiniAccount/>
           </Link>
           : 
           <Link to="/login">
             <Button text="Войти"/>
           </Link>}
         </div>
-       
       </div>
     </header>
   );

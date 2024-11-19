@@ -106,7 +106,6 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 80vw;
-    margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
     gap: 2vh;}
@@ -265,5 +264,117 @@ form {
 .info_block .value {
     font-size: 0.7em;
     color: #2C3950B2;
+}
+
+
+
+
+
+
+
+
+.miniAccount {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-areas:
+    'firstname avatar avatar'
+    'initials avatar avatar';
+}
+
+.miniAccount .firstname {
+    grid-area: firstname;
+    color: #2C3950;
+}
+
+.miniAccount .initials {
+    grid-area: initials;
+    color: #2C395099;
+    text-align: right;
+}
+
+.miniAccount .avatar {
+    margin-left: 0.5em;
+    grid-area: avatar;
+    width: 2em;
+    height: 2em;
+    border: 1px solid black;
+    border-radius: 10em;
+}
+
+.operations {
+    display: flex;
+    gap: 8em;
+    height: 5em;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.operations p {
+    font-size: 1.5em;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.subscribe_page h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.subscribe_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:5em;
+    row-gap: 2em;
+}
+
+.subscribe_card {
+    width: 15em;
+    height: 20em;
+    margin: auto;
+}
+
+.subscribe_card .card_info {
+    width: 15em;
+    height: 15em;
+    border-radius: 30px 30px 0 0;
+    background: linear-gradient(#E6F2DA, #BCBAD3);
+}
+
+.subscribe_card .card_price {
+    margin-top: 1em;
+    width: 15em;
+    height: 4em;
+    border-radius: 0 0 30px 30px;
+    background: #BCBAD3;
+    padding-block: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_price p {
+    color: white;
+    font-size: 2rem;
+}
+
+.card_info h4 {
+    padding-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.card_info p {
+    margin-top: 1rem;
+    padding-left: 3rem;
+    font-size: 0.7rem;
+}
+
+.card_info li {
     
 }

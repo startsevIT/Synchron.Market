@@ -1,31 +1,18 @@
-import { useEffect, useState } from "react";
 import Button from "../Components/Button.js"
+import { GetAccountInStorage } from "../Synchron.Core/Token.js";
 
 export default function AccountPage() {
   
-  const [account, setAccount] = useState([]);
-
-  useEffect( () =>
-  { 
-    let bearer_token =  sessionStorage.getItem("token");
-
-    fetch("https://a30168-fd46.u.d-f.pw/users/account", {
-      method: "GET",
-      headers: {
-        'Authorization': 'Bearer ' + bearer_token,
-        'Content-Type': 'application/json'}
-    })
-    .then(response => response.json())
-    .then(data => setAccount(data));
-
-    
-  },[]);
+  const account = GetAccountInStorage();
 
   return (
     <div className="personal_cabinet">
       <div className="left_part">
         <h1>Личный кабинет</h1>
-        <div className="avatar"></div>
+        <div className="avatar" style={{
+          backgroundImage:`url(${account.imgUrl})`,
+          backgroundSize: "cover"
+        }}></div>
         <Button text="Загрузить фото"/>
         <p style={{color:"lightblue"}}>Удалить</p>
       </div>

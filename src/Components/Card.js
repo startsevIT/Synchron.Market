@@ -1,4 +1,4 @@
-export function Card({ title, subspecies }) {
+export function Card({ title, subspecies, img }) {
   return (
     <div className="direction_card">
       <div className="text">
@@ -6,12 +6,12 @@ export function Card({ title, subspecies }) {
           {title}
         </h4>
         <p>
-          {subspecies.map(x => x.name + ", ")}
+          {subspecies.map(x => x.name.toLowerCase() !== "другое" ?  x.name + ", " : "")}другое
         </p>
       </div>
       <div 
       className="img"
-      style={{ backgroundImage: "url(https://avatars.mds.yandex.net/i?id=4f7586d49edaa427e07a8819562fc284_l-5248434-images-thumbs&n=13)"}}
+      style={{ backgroundImage: `url(${img})`}}
       >
       </div>
     </div>
