@@ -1,0 +1,30 @@
+.image_label{
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #2C395099, #2C395099),
+    url(./mainImg.png) center/cover;
+    background-size: cover;
+    background-position: center;
+    height: 13em;
+    color: white;
+    font-size: 2em;
+    text-align: right;
+    padding: 2em 2em 2em 50%;}
+.main .directions_block {
+    padding-inline: 10vw;
+    padding-top: 8vh;}
+.directions_block h3 {
+    font-size: 2em;
+    font-weight: 100;}
+.directions_block .text {
+    font-size: 0.8em;
+    padding-top: 3vh;
+    color: #2C3950B2;}
+.directions_block .slider {
+    padding-top: 5em;
+    display: flex;
+    overflow-x:scroll;
+    scroll-snap-type: x mandatory;}
+.directions_block .slide {
+    scroll-snap-align: start;
+    min-width: 24.5vw;
+    margin-inline: 1em;}

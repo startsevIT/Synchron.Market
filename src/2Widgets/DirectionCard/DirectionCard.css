@@ -1,0 +1,21 @@
+.direction_card {
+    background: rgb(130,177,179);
+    background: linear-gradient(90deg, rgba(130,177,179,1) 0%, rgb(92, 123, 123) 78%);
+    border-radius: 20px;
+    display: grid;
+    height: 30em;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 1em;
+    overflow: hidden;}
+.direction_card .text {
+    padding-inline: 2em;}
+.direction_card h4 {
+    color: white;
+    font-size: 2em;
+    height: 2em;}
+.direction_card p {
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: white;}
+.direction_card .img {
+    background-size: 100% 100%;}

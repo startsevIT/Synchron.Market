@@ -1,0 +1,55 @@
+
+.subscribe_page h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.subscribe_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:5em;
+    row-gap: 2em;
+}
+
+.subscribe_card {
+    width: 15em;
+    height: 20em;
+    margin: auto;
+}
+
+.subscribe_card .card_info {
+    width: 15em;
+    height: 15em;
+    border-radius: 30px 30px 0 0;
+    background: linear-gradient(#E6F2DA, #BCBAD3);
+}
+
+.subscribe_card .card_price {
+    margin-top: 1em;
+    width: 15em;
+    height: 4em;
+    border-radius: 0 0 30px 30px;
+    background: #BCBAD3;
+    padding-block: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_price p {
+    color: white;
+    font-size: 2rem;
+}
+
+.card_info h4 {
+    padding-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.card_info p {
+    margin-top: 1rem;
+    padding-left: 3rem;
+    font-size: 0.7rem;
+}

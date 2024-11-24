@@ -1,0 +1,31 @@
+.miniAccount {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-areas:
+    'firstname avatar avatar'
+    'initials avatar avatar';
+}
+
+.miniAccount .firstname {
+    grid-area: firstname;
+    color: #2C3950;
+}
+
+.miniAccount .initials {
+    grid-area: initials;
+    color: #2C395099;
+    text-align: right;
+}
+
+.miniAccount .avatar {
+    margin-left: 0.5em;
+    grid-area: avatar;
+    width: 2em;
+    height: 2em;
+    border: 1px solid black;
+    border-radius: 10em;
+    background-size: cover;
+}
+
+.miniAccount:hover {
+}

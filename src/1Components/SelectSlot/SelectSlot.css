@@ -1,0 +1,12 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    padding-block: 1em;
+    color: #2C3950B2;
+}
+
+.input select {
+    height: 2em;
+    border-radius: 5px;
+    border: 0.5px solid #2C39504D;
+}

@@ -1,0 +1,12 @@
+.info_block {
+    margin-block: auto;
+}
+
+.info_block .title {
+    font-size: 0.8em;
+}
+
+.info_block .value {
+    font-size: 0.7em;
+    color: #2C3950B2;
+}

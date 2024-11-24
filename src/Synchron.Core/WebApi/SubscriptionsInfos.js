@@ -1,4 +1,4 @@
-import configData from "../../config.json"
+import configData from "../config.json"
 import { GetToken } from "../Token";
 
 export async function PostSubscriptionInfoAsync(name, price, description, roleId, time) {

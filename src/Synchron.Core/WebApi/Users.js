@@ -1,5 +1,5 @@
-import configData from "../../config.json"
-import { GetToken, RemoveToken, SetToken } from "../Token";
+import configData from "../config.json"
+import { GetToken, RemoveToken, SetToken, UpdateToken } from "../Token";
 
 export async function GetAllUsersAsync() {
     return await fetch(`${configData.SERVER_URL}/users`, {
@@ -42,22 +42,18 @@ export async function LoginUserAsync(formData) {
 }
 
 export async function SubscribeUserAsync(subscriptionId) {
-    let token = GetToken();
-    RemoveToken();
-    SetToken(
+    UpdateToken(
     await fetch(`${configData.SERVER_URL}/users/subscribe/${subscriptionId}`, {
       method: "POST",
-      headers: {'Authorization': token}
+      headers: {'Authorization': GetToken()}
     }).then(response => response.json()));
 }
 
 export async function UnSubscribeUserAsync(subscriptionId) {
-    let token = GetToken();
-    RemoveToken();
-    SetToken(
+    UpdateToken(
     await fetch(`${configData.SERVER_URL}/users/subscribe/${subscriptionId}`, {
       method: "POST",
-      headers: {'Authorization': token}
+      headers: {'Authorization': GetToken()}
     }).then(response => response.json()));
 }
 

@@ -1,0 +1,17 @@
+.login_page {
+    margin-inline: 25em;
+    margin-top: 5em;
+}
+
+.login_page form h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+
+
+.login_page form p {
+    margin-top: 1em;
+    text-decoration: none;
+    text-align: center;
+}

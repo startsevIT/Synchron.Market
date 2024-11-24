@@ -1,0 +1,8 @@
+.create_order_page {
+    display: flex;
+    justify-content: center;
+}
+
+.create_order_page form {
+    width: 50em;
+}

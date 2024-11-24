@@ -1,0 +1,15 @@
+.main_button {
+    color: white;
+    background-color: #50C878;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.main_button:hover {
+    background-color: #32814d;
+}
+
+.main_button:active {
+    background-color: #18552e;
+}

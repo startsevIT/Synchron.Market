@@ -1,0 +1,20 @@
+.link_button {
+    color: #2C3950;
+    background-color: transparent;
+    width: 180px;
+    height: 50px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.link_button:hover {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.link_button:active {
+    text-decoration: solid;
+    color: #50C878;
+}

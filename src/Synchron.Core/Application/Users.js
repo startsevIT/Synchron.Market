@@ -1,4 +1,4 @@
-import { GetAccountInStorage, SetAccountInStorage } from "../Token";
+import { SetAccountInStorage } from "../Token";
 import { GetUserAsync, LoginUserAsync, RegisterUserAsync } from "../WebApi/Users";
 
 export async function LoginUser(formData)
