@@ -1,5 +1,6 @@
 .login_page {
-    margin-inline: 25em;
+    display: flex;
+    justify-content: center;
     margin-top: 5em;
 }
 
