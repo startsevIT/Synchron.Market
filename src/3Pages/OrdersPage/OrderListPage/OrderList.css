@@ -1,7 +1,8 @@
 .orders {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    min-width: 450px;
+    width: 50vw;
     margin-left: auto;
     margin-right: auto;
     gap: 2vh;}
